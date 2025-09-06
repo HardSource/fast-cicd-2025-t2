@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       HOST_ENV: ${{ github.event.inputs.environment == 'prod' && '3.84.186.111' || '54.210.159.156' }} 
-      SSH_USER: ""
+      SSH_USER: "root"
       SSH_PORT: 22
     steps:
     - run: |
